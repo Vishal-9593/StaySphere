@@ -69,12 +69,6 @@ const sessionOptions={
     },
 };
 
-
-// app.get("/",(req,res)=>{
-//     res.send("Hello  iam learning");
-// });
-
-
     app.use(session(sessionOptions));
     app.use(flash());
 
@@ -92,24 +86,9 @@ app.use((req,res,next)=>{
     next();
 });
 
-
-// app.get("/demouser",async(req,res)=>{
-//     let fakeUser=new User({
-//         email:"student@gmail.com",
-//         username:"Vishal-delta",
-//     });
-//     let registeredUser= await User.register(fakeUser,"helloworld");
-//     res.send(registeredUser);
-// });
-
-
-
 app.use("/listings",listingRouter);
 app.use("/listings/:id/reviews",reviewsRouter);
 app.use("/",userRouter);
-
-
-
 
 app.all("*",(req,res,next)=>{
     next(new ExpressError(404,"Page Not Found!"));
