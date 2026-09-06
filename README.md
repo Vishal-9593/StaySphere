@@ -71,36 +71,5 @@ A full-stack **Airbnb-inspired property listing platform** where users can explo
 - VS Code
 - npm
 
-## 📂 Project Structure
-StaySphere
-│
-├── controllers/
-│ ├── listings.js
-│ └── reviews.js
-│
-├── models/
-│ ├── listing.js
-│ ├── review.js
-│ └── user.js
-│
-├── routes/
-│ ├── listing.js
-│ ├── review.js
-│ └── user.js
-│
-├── views/
-│ ├── layouts/
-│ ├── listings/
-│ └── users/
-│
-├── public/
-│ ├── css/
-│ └── js/
-│
-├── utils/
-│
-├── app.js
-├── package.json
-└── README.md
 
 
